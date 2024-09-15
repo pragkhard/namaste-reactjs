@@ -1,0 +1,24 @@
+{
+  "name": "namastereact",
+  "version": "1.0.0",
+  "description": "This is Namaste React",
+  "main": "index.js",
+  "scripts": {
+    "test": "Jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pragkhard/namaste-reactjs.git"
+  },
+  "keywords": [
+    "namaste",
+    "react",
+    "react"
+  ],
+  "author": "Pragati khard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pragkhard/namaste-reactjs/issues"
+  },
+  "homepage": "https://github.com/pragkhard/namaste-reactjs#readme"
+}
