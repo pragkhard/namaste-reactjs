@@ -3,7 +3,6 @@ Episode - 1
 * Write the code for "Hello World" using HTML
 * Write the code for "Hello World" using javaScript
 * Write the code for "Hello World" using reactJS using CDN link
-*
 * Create the nested structure code using reactJs
 * Order of CDN and javaScript files
 * What happens if I place tags inside the HTML <div id="root"></div> element, and at the same time,  React renders content into the same root element? 
@@ -25,3 +24,13 @@ Episode - 2
 * Parcel features 
 * Create the prod build | npx parcel build index.html | dist | .parcel-cache
 * Browserslist
+
+
+Episode - 3
+
+* Create different scripts for starting our project in Development and Production | 
+  "start":" parcel index.html" | "build": "parcel build index.html"
+* JSX
+* React.createElement or JSX works behind the scene
+* Can browser understand JSX , If the browser can’t understand JSX how is it still working?
+* Babel 
