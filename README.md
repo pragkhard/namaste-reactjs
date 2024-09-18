@@ -34,3 +34,7 @@ Episode - 3
 * React.createElement or JSX works behind the scene
 * Can browser understand JSX , If the browser can’t understand JSX how is it still working?
 * Babel 
+* Components | Class-based Components | Functional Components 
+* Single Line and Multi Line JSX Code
+* Components Composition 
+* Advantages of using JSX
