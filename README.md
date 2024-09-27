@@ -38,3 +38,15 @@ Episode - 3
 * Single Line and Multi Line JSX Code
 * Components Composition 
 * Advantages of using JSX
+
+
+Episode - 4
+
+* Creating Food Ordering App | Planning for the UI
+* Way to write the Inline CSS in ReactJs
+* How to make the cards dynamically | Props
+* Destructuring the props
+* Intregrated the API data and fetch the data manually | Destructuring the code 
+* Optional Chaining
+* How do I loop over the data and create the whole cards dynamically | using Map
+* keys in map | optimization and performance 
