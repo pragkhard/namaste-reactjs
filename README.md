@@ -50,3 +50,27 @@ Episode - 4
 * Optional Chaining
 * How do I loop over the data and create the whole cards dynamically | using Map
 * keys in map | optimization and performance 
+
+
+Episode - 5
+
+* Restructure our project folder | Best practics 
+* Create commponents folder | utils - constants.js , mockData.js
+* Type of export/import in React
+
+1. Default Export/Import
+export default Component;
+import Component from "path";
+
+2. Named Export/Import
+export const Component;
+import {Component} from "path";
+
+* Can we use default export with named export ?  
+* Add a button and when you click on this button, it will show you the best-rated restaurants |    filter Condition
+* What is Hooks ?
+* useState() 
+* useEffect()
+* Whenever state variable updates or changes react re-render the components.
+* Why react is the most popular library and why it is fast 
+* Virtual DOM | Diff algo. | Reconciliation algo. | React Fiber
