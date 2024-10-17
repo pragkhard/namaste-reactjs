@@ -74,3 +74,9 @@ import {Component} from "path";
 * Whenever state variable updates or changes react re-render the components.
 * Why react is the most popular library and why it is fast 
 * Virtual DOM | Diff algo. | Reconciliation algo. | React Fiber
+
+Episode - 6
+* Monolith & Microservices Architecture.
+* Two approaches to fetch and render the data | Load and Render | Render First Fetch Later
+* useEffect() | How the useEffect works
+* Fetch the data from API using fetch method
