@@ -1,27 +1,44 @@
 import RestaurantCard from './RestaurantCard';
 import resList from '../utils/mockdata';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 
 const Body = () => {
-    const [listOfResturant, setlistOfResturant] = useState(resList)
+    const [listOfRestaurants, setListOfRestraunt] = useState([]);
 
+    useEffect(() => {
+        fetchData();
+    }, []);
+
+    const fetchData = async () => {
+        const data = await fetch(
+            "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING"
+        );
+
+        const json = await data.json();
+        console.log(json)
+        
+        // Optional Chaining
+        setListOfRestraunt(json?.data?.cards[1]?.card?.card.gridElements?.infoWithStyle?.restaurants)
+
+
+    };
 
     return (
         <div className="body">
             <div className="filter">
                 <button className="filter-btn" onClick={() => {
-                    const filterList = listOfResturant.filter((res) => res.info.avgRating > 4)
+                    const filterList = resList.filter((res) => res.info.avgRating > 4.5)
                     console.log(filterList)
-                    setlistOfResturant(filterList)
+                    setListOfRestraunt(filterList)
                 }}>
-                    Top rated Resturant
+                    Top rated Resturantsssssssssssss
                 </button>
 
             </div>
             <div className="res-container" >
                 {
-                    listOfResturant.map((restaurant) => (<RestaurantCard key={restaurant.info.id} resData={restaurant} />))
+                    listOfRestaurants.map((restaurant) => (<RestaurantCard resData={restaurant} />))
                 }
                 {/* No need to write <RestaurantCard /> again and again  */}
 
