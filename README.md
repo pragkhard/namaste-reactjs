@@ -80,3 +80,8 @@ Episode - 6
 * Two approaches to fetch and render the data | Load and Render | Render First Fetch Later
 * useEffect() | How the useEffect works
 * Fetch the data from API using fetch method
+* Spinning loader | Shimmer UI
+* Conditional rendering 
+* Deep driven in useState hook | login/logout feature implementation
+* React will refresh the whole component i.e Header or it will just refresh the button?
+* Toggle functionality
