@@ -49,6 +49,7 @@ const Body = () => {
 
                     const filterResturant = listOfRestaurants.filter((res) => res.info.name.toLowerCase().includes(searchText.toLowerCase()))
 
+                    // setListOfRestraunt(filterResturant)
                     setFilteredRestaurant(filterResturant)
 
                 }}>Search</button>
@@ -63,6 +64,9 @@ const Body = () => {
             </div>
             <div className="res-container" >
                 {
+
+                    // listOfRestaurants.map((restaurant) => (<RestaurantCard resData={restaurant} key={restaurant?.info.id} />))
+                    
                     filteredRestaurant.map((restaurant) => (<RestaurantCard resData={restaurant} key={restaurant?.info.id} />))
                 }
                 {/* No need to write <RestaurantCard /> again and again  */}
