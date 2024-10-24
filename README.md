@@ -85,3 +85,5 @@ Episode - 6
 * Deep driven in useState hook | login/logout feature implementation
 * React will refresh the whole component i.e Header or it will just refresh the button?
 * Toggle functionality
+* Implement the search functionality
+* Implement the filter logic | Resolve Bugs
