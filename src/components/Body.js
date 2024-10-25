@@ -66,8 +66,8 @@ const Body = () => {
                 {
 
                     // listOfRestaurants.map((restaurant) => (<RestaurantCard resData={restaurant} key={restaurant?.info.id} />))
-                    
-                    filteredRestaurant.map((restaurant) => (<RestaurantCard resData={restaurant} key={restaurant?.info.id} />))
+
+                    filteredRestaurant.map((restaurant) => (<RestaurantCard key={restaurant?.info.id}resData={restaurant}  />))
                 }
                 {/* No need to write <RestaurantCard /> again and again  */}
 
