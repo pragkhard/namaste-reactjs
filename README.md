@@ -75,6 +75,8 @@ import {Component} from "path";
 * Why react is the most popular library and why it is fast 
 * Virtual DOM | Diff algo. | Reconciliation algo. | React Fiber
 
+
+
 Episode - 6
 * Monolith & Microservices Architecture.
 * Two approaches to fetch and render the data | Load and Render | Render First Fetch Later
@@ -87,3 +89,15 @@ Episode - 6
 * Toggle functionality
 * Implement the search functionality
 * Implement the filter logic | Resolve Bugs
+
+
+
+Episode - 6.1 
+* How to find the API 
+* Extract the data from API | Logic.
+
+
+Episode - 6.2
+* What is CORS?
+* Without using CORS Plugin how we can resolve the CORS issue?
+* website:- corsproxy.io | How to use Corsproxy.io URL (https://corsproxy.io/?) 
