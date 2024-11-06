@@ -101,3 +101,18 @@ Episode - 6.2
 * What is CORS?
 * Without using CORS Plugin how we can resolve the CORS issue?
 * website:- corsproxy.io | How to use Corsproxy.io URL (https://corsproxy.io/?) 
+
+
+Episode - 07
+* Dive deeper in useEffect hook | If no dependency array | If dependency array is empty = [] | If dependency array is [btnNameReact] 
+* Dive deeper in useState hook.
+* Routing | Install react routing library | Routing configuration using createBrowserRouter | Create the own error, Customize error page | Add Hook feature 
+* Create the childern routes | uses of outlet 
+* React component where a header section remains static at the top, while the rest of the component loads dynamic content and updates based on data changes?
+* Difference between the anchor tag and link 
+* 2 types routing in web apps | Client-side routing | Server-side routing
+* Create the dynamic route for all the restaurant we have
+* Create the restaurant menu component
+* use "useParam" Hook to access dynamic parameters from the like ID's
+* According to the url my data has changed 
+* Make the home restaurant clickable  
