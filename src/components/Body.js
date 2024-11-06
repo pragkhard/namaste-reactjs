@@ -2,16 +2,18 @@ import RestaurantCard from './RestaurantCard';
 import resList from '../utils/mockdata';
 import { useState, useEffect } from 'react';
 import Shimmer from './Shimmer';
+import { Link } from 'react-router-dom';
 
 
 const Body = () => {
     const [listOfRestaurants, setListOfRestraunt] = useState([]);
     const [filteredRestaurant, setFilteredRestaurant] = useState([]);
+
     const [searchText, setSearchText] = useState("");
 
 
     //whenever state variable update, react triggers a reconcilation cycle(re-renders the component)
-    console.log("Body Rendered")
+    // console.log("Body Rendered")
 
     useEffect(() => {
         fetchData();
@@ -23,7 +25,7 @@ const Body = () => {
         );
 
         const json = await data.json();
-        console.log(json)
+        // console.log(json)
 
         // Optional Chaining
         setListOfRestraunt(json?.data?.cards[1]?.card?.card.gridElements?.infoWithStyle?.restaurants)
@@ -67,7 +69,7 @@ const Body = () => {
 
                     // listOfRestaurants.map((restaurant) => (<RestaurantCard resData={restaurant} key={restaurant?.info.id} />))
 
-                    filteredRestaurant.map((restaurant) => (<RestaurantCard key={restaurant?.info.id}resData={restaurant}  />))
+                    filteredRestaurant.map((restaurant) => (<Link key={restaurant?.info.id} to={"/restaurants/" + restaurant?.info.id}><RestaurantCard resData={restaurant} /></Link>))
                 }
                 {/* No need to write <RestaurantCard /> again and again  */}
 
