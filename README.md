@@ -78,6 +78,7 @@ import {Component} from "path";
 
 
 Episode - 6
+
 * Monolith & Microservices Architecture.
 * Two approaches to fetch and render the data | Load and Render | Render First Fetch Later
 * useEffect() | How the useEffect works
@@ -104,6 +105,7 @@ Episode - 6.2
 
 
 Episode - 07
+
 * Dive deeper in useEffect hook | If no dependency array | If dependency array is empty = [] | If dependency array is [btnNameReact] 
 * Dive deeper in useState hook.
 * Routing | Install react routing library | Routing configuration using createBrowserRouter | Create the own error, Customize error page | Add Hook feature 
@@ -116,3 +118,21 @@ Episode - 07
 * use "useParam" Hook to access dynamic parameters from the like ID's
 * According to the url my data has changed 
 * Make the home restaurant clickable  
+
+
+Episode - 08
+
+* Convert functional based component into class based component | User.js - functional based | UserClass - class based
+* Compare between functional and class-based components 
+* What is the React.Component?
+* Pass the props in functional based component and class based component 
+* Create the state variable in class based component
+* How to create two state variable inside the functional and class component
+* How to update the variable in functional and class based components 
+* How to create two state variables inside the functional and class component
+* Update the variable in functional and class based components 
+* How we will update count two variable in the same class component 
+* LifeCycle methods of class based components
+* Order of Constructor , render , componentDidMount | Parent and child relationship | uses of componentDidMount
+* we have a parent and haa multiple children, then what will be the order of console.log | Reason
+* Make the API call in class based component
