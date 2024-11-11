@@ -11,9 +11,26 @@ class About extends Component {
         // console.log("Parent Constructor")
     }
 
-    componentDidMount() {
-        // console.log("Parent componentDidMount")
-    }
+    // componentDidMount() {
+    //     console.log("Parent componentDidMount")
+    // }
+    // componentDidMount() {
+    //     this.timer = setInterval(() => {
+    //         console.log("NAMASTE REACT OP")
+    //     }, 1000)
+    //     console.log("Parent componentDidMount")
+    // }
+    // componentDidMount(prevProps, prevState) {
+    //     if (
+    //         this.state.count == !prevState.count ||
+    //         this.state.count == !prevState.count
+    //     )
+    //      console.log("Parent componentDidMount")
+    // }
+    // componentWillUnmount() {
+    //     clearInterval(this.timer)
+    //     console.log(componentWillUnmount)
+    // }
     render() {
         // console.log("Parent Render")
         return (
@@ -48,7 +65,7 @@ export default About;
 // -Parent Constructor
 // -Parent Render
 
-// This is the render phase for both the cildrens 
+// This is the render phase for both the cildrens
 
 //     -Pragati Khard (Class)Child Constructor
 //     -Pragati Khard (Class)Child Render
@@ -58,7 +75,7 @@ export default About;
 
 // <DOM UPDATED - IN SINGLE BATCH>
 
-// This is the commit phase for both the cildrens 
+// This is the commit phase for both the cildrens
 
 // -Pragati Khard (Class)Child componentDidMount
 // -Shubhi Khard (Class)Child componentDidMount
