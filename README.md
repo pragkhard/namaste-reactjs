@@ -136,3 +136,10 @@ Episode - 08
 * Order of Constructor , render , componentDidMount | Parent and child relationship | uses of componentDidMount
 * we have a parent and haa multiple children, then what will be the order of console.log | Reason
 * Make the API call in class based component
+* componentDidUpdate | console.log - Order 
+* componentWillUnmount | console.log - Order 
+* Write like the Class component methods in Functional components
+* Disadvantage of single page application 
+* Use setInterval in class component inside componentDidMount| Resolved the issue using clearInterval inside componetWillUnmount,
+* Use setInterval in functional component inside useEffect | Resolved the issue using clearInterval inside Return method
+* How we can get the componentWillUnmount() method in functional component | Return using useEffect
