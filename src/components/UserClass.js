@@ -10,7 +10,8 @@ class UserClass extends React.Component {
 
             userInfo: {
                 name: "Dummy",
-                locationTwo: "Banglore",
+                locationTwo: "Default",
+                avatar_url: "http://dummy-photo.com"
             }
         }
         // console.log(this.props.name + "Child Constructor")
@@ -27,13 +28,19 @@ class UserClass extends React.Component {
 
         console.log(json)
     }
+    componentDidUpdate() {
+        // console.log("componentDidUpdate")
+    }
+    componentWillUnmount() {
+        // console.log("componentWillUnmount")
+    }
     render() {
         const { name, location } = this.props;
         const { count, count1 } = this.state;
         const { locationTwo } = this.state.userInfo;
 
         // console.log(this.props.name + "Child Render")
-
+        // debugger;
         return (
             <div className="user-card">
                 <h1>Count: {count}</h1>
@@ -54,6 +61,7 @@ class UserClass extends React.Component {
                 {/* Update the api data  */}
                 <h3>Dummy Name: {this.state.userInfo.name}</h3>
                 <h3>Dummy Location : {locationTwo}</h3>
+                {/* <img src={avatar_url} /> */}
 
             </div>
         )
@@ -61,3 +69,26 @@ class UserClass extends React.Component {
 }
 
 export default UserClass;
+
+
+/****
+ *
+ * --- MOUNTING ----
+ *
+ * Constructor (dummy)
+ * Render (dummy)
+ *      <HTML Dummy >
+ * Component Did MOunt
+ *      <API Call>
+ *      <this.setState> -> State variable is updated
+ *
+ * ---- UPDATE
+ *
+ *      render(APi data)
+ *      <HTML (new API data>)
+ *      ccomponentDid Update
+ *
+ *
+ *
+ *
+ */
