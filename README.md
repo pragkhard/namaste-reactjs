@@ -143,3 +143,16 @@ Episode - 08
 * Use setInterval in class component inside componentDidMount| Resolved the issue using clearInterval inside componetWillUnmount,
 * Use setInterval in functional component inside useEffect | Resolved the issue using clearInterval inside Return method
 * How we can get the componentWillUnmount() method in functional component | Return using useEffect
+
+
+
+Episode - 09
+
+* custom hooks
+* Create the own custom hook that will fetch the data and give it to Resturant Menu.
+* Create the custom hook for online offline feature
+* If the online status of internet is true then show the cards and if the online status is false then show the message - Looks like you're offline!! Please check your internet connection;
+* In browser itself how we can turn on and off the internet 
+* Write the condition for online status - "green tick and red tick"
+* Chunking, Code Splitting, Dynamic Bundling, lazy Loading, on demand loading, dynamix imoprt (same name)
+* lazy syntax | Suspense | fallback - Create the muntiple smaller bundles 
