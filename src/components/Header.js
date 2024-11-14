@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { LOGO_URL } from '../utils/constants';
 import { Link } from 'react-router-dom';
+import useOnlineStatus from '../utils/useOnlineStatus';
 
 // Named Export 
 export const Header = () => {
@@ -9,6 +10,9 @@ export const Header = () => {
 
     // If no dependency array => useEffect is called on every render
     // If dependency array is empty = [] => useEffect is called on initial render (just once)
+
+//    call the custom hook 
+    const onlineStatus = useOnlineStatus();
 
     useEffect(() => {
         // console.log("useEffect Called")
@@ -21,6 +25,9 @@ export const Header = () => {
             </div>
             <div className="nav-items">
                 <ul>
+                    <li>
+                        Online Status: {onlineStatus ? "✅" : "🔴"}
+                    </li>
                     <li>
                         <Link to="/">
                             Home
@@ -35,6 +42,9 @@ export const Header = () => {
                     <li>
                         <Link to="/contact">Contact us</Link>
                     </li>
+                    <li>
+                        <Link to="/grocery">Grocery</Link>
+                    </li>                   
                     <li>Card</li>
                     <button className='Login' onClick={() => {
                         btnNameReact == "Login" ? setBtnNameReact("Logout") : setBtnNameReact("Login")
