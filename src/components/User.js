@@ -9,14 +9,14 @@ const User = ({ name }) => {
         //     console.log("NAMASTE REACT OP Functional Comp.")
         // }, 1000);
 
-        console.log("useEffect")
+        // console.log("useEffect")
 
         return () => {
             // clearInterval(timer);
-            console.log("useEffect Return")
+            // console.log("useEffect Return")
         };
     }, [])
-    console.log("Render")
+    // console.log("Render")
     return (
 
         <div className="user-card">
