@@ -52,29 +52,33 @@ const Body = () => {
 
     return listOfRestaurants.length === 0 ? <Shimmer /> : (
         <div className="body">
-            <div className="filter">
-                <input type="text" className='search-box' value={searchText} onChange={(e) => { setSearchText(e.target.value) }} />
-                <button onClick={() => {
-                    //Filter the resturant carads and updated the UI
-                    //searchText
-                    console.log(searchText)
+            <div className="filter flex">
+                <div className="search m-4 p-4">
+                    <input type="text" className='search-box border border-solid border-black' value={searchText} onChange={(e) => { setSearchText(e.target.value) }} />
+                </div>
+                <div className="search m-4 p-4">
 
-                    const filterResturant = listOfRestaurants.filter((res) => res.info.name.toLowerCase().includes(searchText.toLowerCase()))
+                    <button className='px-4 py-2 bg-green-100 rounded-lg' onClick={() => {
+                        //Filter the resturant carads and updated the UI
+                        //searchText
+                        console.log(searchText)
 
-                    // setListOfRestraunt(filterResturant)
-                    setFilteredRestaurant(filterResturant)
+                        const filterResturant = listOfRestaurants.filter((res) => res.info.name.toLowerCase().includes(searchText.toLowerCase()))
 
-                }}>Search</button>
-                <button className="filter-btn" onClick={() => {
-                    const filterList = resList.filter((res) => res.info.avgRating > 4.5)
-                    console.log(filterList)
-                    setListOfRestraunt(filterList)
-                }}>
-                    Top rated
-                </button>
+                        // setListOfRestraunt(filterResturant)
+                        setFilteredRestaurant(filterResturant)
 
+                    }}>Search</button>
+                    <button className="filter-btn px-4 py-2 bg-gray-500" onClick={() => {
+                        const filterList = resList.filter((res) => res.info.avgRating > 4.5)
+                        console.log(filterList)
+                        setListOfRestraunt(filterList)
+                    }}>
+                        Top rated
+                    </button>
+                </div>
             </div>
-            <div className="res-container" >
+            <div className="res-container flex flex-wrap items-center justify-center" >
                 {
 
                     // listOfRestaurants.map((restaurant) => (<RestaurantCard resData={restaurant} key={restaurant?.info.id} />))
