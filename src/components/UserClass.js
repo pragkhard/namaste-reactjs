@@ -42,7 +42,7 @@ class UserClass extends React.Component {
         // console.log(this.props.name + "Child Render")
         // debugger;
         return (
-            <div className="user-card">
+            <div className="user-card m-4 p-4 bg-gray-200 ">
                 <h1>Count: {count}</h1>
                 <button onClick={() => {
                     // NEVER UPDATE STATE VARIABLES DIRECTLY 
