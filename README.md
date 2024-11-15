@@ -156,3 +156,10 @@ Episode - 09
 * Write the condition for online status - "green tick and red tick"
 * Chunking, Code Splitting, Dynamic Bundling, lazy Loading, on demand loading, dynamix imoprt (same name)
 * lazy syntax | Suspense | fallback - Create the muntiple smaller bundles 
+
+
+
+Episode - 10
+
+* There is multiple way to use CSS
+* Tailwind CSS | Configuration 
