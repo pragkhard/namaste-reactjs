@@ -1,4 +1,4 @@
-import RestaurantCard from './RestaurantCard';
+import RestaurantCard, { withPromtedLabel } from './RestaurantCard';
 import resList from '../utils/mockdata';
 import { useState, useEffect } from 'react';
 import Shimmer from './Shimmer';
@@ -12,6 +12,7 @@ const Body = () => {
 
     const [searchText, setSearchText] = useState("");
 
+    const RestaurantCardPromoted = withPromtedLabel(RestaurantCard);
 
     //whenever state variable update, react triggers a reconcilation cycle(re-renders the component)
     // console.log("Body Rendered")
@@ -83,7 +84,17 @@ const Body = () => {
 
                     // listOfRestaurants.map((restaurant) => (<RestaurantCard resData={restaurant} key={restaurant?.info.id} />))
 
-                    filteredRestaurant.map((restaurant) => (<Link key={restaurant?.info.id} to={"/restaurants/" + restaurant?.info.id}><RestaurantCard resData={restaurant} /></Link>))
+                    filteredRestaurant.map((restaurant) => (
+                        <Link key={restaurant?.info.id} to={"/restaurants/" + restaurant?.info.id}>
+                            {
+                                //If the resturant is promoted then add a promoted label to it
+                                restaurant?.info.promoted ? (<RestaurantCardPromoted resData={restaurant?.info} />) : (<RestaurantCard resData={restaurant?.info} />
+                                )
+
+                                // <RestaurantCard resData={restaurant?.info} />
+                            }
+                        </Link>
+                    ))
                 }
                 {/* No need to write <RestaurantCard /> again and again  */}
 
