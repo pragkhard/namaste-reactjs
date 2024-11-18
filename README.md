@@ -163,3 +163,11 @@ Episode - 10
 
 * There is multiple way to use CSS
 * Tailwind CSS | Configuration 
+
+
+
+Episode - 11
+
+* Higher order component
+* UI layer | Data layer | How to manage the data layer 
+* 
